@@ -1,13 +1,96 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.global__container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rebeccapurple;
+  display: grid;
+  place-items: center;
+}
+
+.main__container {
+  background-color: white;
+  width: 28vw;
+  height: 80vh;
+  border-radius: 18px;
+  box-shadow: 1px 1px hsl(0, 0, 20%);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.heading__display {
+  margin-top: 20px;
+  background-color: rebeccapurple;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 4px 0px;
+  font-size: 30px;
+}
+
+.input__data {
+  margin: 40px 0px 30px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.input__field {
+  font-size: 22px;
+  padding: 8px 0;
+  text-align: center;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid rgb(131, 124, 138);
+}
+
+.add__btn {
+  font-size: 30px;
+  color: white;
+  background-color: rebeccapurple;
+  border-radius: 30px;
+  padding: 0px 10px;
+}
+
+.add__btn:hover {
+  background-color: green;
+}
+
+.list__items {
+  width: 100%;
+  text-align: center;
+  padding: 0px 30px;
+  overflow: hidden;
+}
+.item__display {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.remove__btn {
+  font-size: 22px;
+  color: white;
+  background-color: rgb(139, 115, 161);
+  border-radius: 30px;
+  padding: 2px 8px;
+  margin-right: 20px;
+}
+.remove__btn:hover {
+  background-color: red;
+}
+
+.item__heading {
+  color: rebeccapurple;
 }
